@@ -95,6 +95,8 @@ def fill(arr, value, start=0, end=-1):
     for i in range(start, end):
         arr[i] = value
 
+    return arr
+
 def find_index(arr, arg, fromIndex=0):
     for i in range(fromIndex, len(arr)):
         if arg(arr[i]):
