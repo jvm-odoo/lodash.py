@@ -68,10 +68,10 @@ def without(arr, *args):
 def drop(arr, n=1):
     return arr[n:]
 
-def dropRight(arr, n=1):
-    return arr[:n]
+def drop_right(arr, n=1):
+    return arr[:-n]
 
-def dropWhile(arr, fun):
+def drop_while(arr, fun):
     for item in arr:
         if not fun(item):
             break
@@ -80,7 +80,7 @@ def dropWhile(arr, fun):
 
     return arr
 
-def dropWhileRight(arr, fun):
+def drop_while_right(arr, fun):
     for item in arr:
         if not fun(item):
             break
@@ -98,13 +98,13 @@ def fill(arr, value, start=0, end=-1):
 
     return arr
 
-def findIndex(arr, arg, fromIndex=0):
+def find_index(arr, arg, fromIndex=0):
     for i in range(fromIndex, len(arr)):
         if arg(arr[i]):
             return i
     return -1
 
-def findLastIndex(arr, arg, fromIndex=0):
+def find_last_index(arr, arg, fromIndex=0):
     for i in reversed(range(0 + fromIndex, len(arr))):
         if arg(arr[i]):
             return i
