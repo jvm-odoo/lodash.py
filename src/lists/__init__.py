@@ -80,7 +80,7 @@ def drop_while(arr, fun):
 
     return arr
 
-def drop_while_right(arr, fun):
+def drop_right_while(arr, fun):
     for item in arr:
         if not fun(item):
             break

@@ -14,7 +14,7 @@ from .lists import (
     drop,
     drop_right,
     drop_while,
-    drop_while_right,
+    drop_right_while,
     fill,
     find_index,
     find_last_index,

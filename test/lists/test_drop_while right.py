@@ -3,9 +3,9 @@ import src as _
 import unittest
 
 class TestListsMethodDropWhileRight(unittest.TestCase):
-    def test_drop_while_right(self):
+    def drop_right_while(self):
         self.assertEqual(
-            _.drop_while_right([1, 2, 3], lambda x: x != 1),
+            _.drop_right_while([1, 2, 3], lambda x: x != 1),
             [1]
         )
 
