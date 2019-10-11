@@ -92,19 +92,19 @@ if __name__ == '__main__':
 
     print(
         'dropRight([1, 2, 3, 4], 2):',
-        _.dropRight([1, 2, 3, 4], 2),
+        _.drop_right([1, 2, 3, 4], 2),
         '\n'
     )
 
     print(
         'dropWhile([0, 0, 1, 0, 0], lambda x: x == 0):',
-        _.dropWhile([0, 0, 1, 0, 0], lambda x: x == 0),
+        _.drop_while([0, 0, 1, 0, 0], lambda x: x == 0),
         '\n'
     )
 
     print(
         'dropWhileRight([0, 0, 1, 0, 0], lambda x: x == 0):',
-        _.dropWhileRight([0, 0, 1, 0, 0], lambda x: x == 0),
+        _.drop_right_while([0, 0, 1, 0, 0], lambda x: x == 0),
         '\n'
     )
 
@@ -116,13 +116,13 @@ if __name__ == '__main__':
 
     print(
         'findIndex([1, 2, 3, 4], lambda x: x == 3, 2):',
-        _.findIndex([1, 2, 3, 4], lambda x: x == 3, 2),
+        _.find_index([1, 2, 3, 4], lambda x: x == 3, 2),
         '\n'
     )
 
     print(
         'findLastIndex([1, 2, 3, 4], lambda x: x == 3, 2):',
-        _.findLastIndex([1, 2, 3, 4], lambda x: x == 3, 2),
+        _.find_last_index([1, 2, 3, 4], lambda x: x == 3, 2),
         '\n'
     )
 
