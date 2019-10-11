@@ -92,11 +92,8 @@ def drop_while_right(arr, fun):
 def fill(arr, value, start=0, end=-1):
     end = len(arr) if end == -1 else end
 
-    for i in range(0, end):
-        if i >= start:
-            arr[i] = value
-
-    return arr
+    for i in range(start, end):
+        arr[i] = value
 
 def find_index(arr, arg, fromIndex=0):
     for i in range(fromIndex, len(arr)):
