@@ -81,11 +81,11 @@ def drop_while(arr, fun):
     return arr
 
 def drop_right_while(arr, fun):
-    for item in arr:
-        if not fun(item):
+    for i in reversed(range(0, len(arr))):
+        if not fun(arr[i]):
             break
         else:
-            arr = arr[:-1]
+            del arr[i]
 
     return arr
 
